@@ -1,0 +1,73 @@
+public class Lesson5 {
+    public static void main(String[] args) {
+        Person[] newPerson = new Person [5];
+        newPerson[0] = new Person ("Ivanov Ivan", "Engineer", "ivanov@mailbox.com", "892312312",50000,41);
+        newPerson[1] = new Person("Petrov Petr", "Creator", "petrov@mailbox.com", "892312314",50000,32);
+        newPerson[2] = new Person("Maximov Maxim", "Guard", "maximov@mailbox.com", "892312315",10000,43);
+        newPerson[3] = new Person("Sergeev Sergey", "Hacker", "sergeev@mailbox.com", "892312316",5000,18);
+        newPerson[4] = new Person("Nadezhdina Nadezhda", "Manager", "nadezhdina@mailbox.com", "892312317",3000,21);
+        for (Person Person : newPerson)
+            System.out.println(Person);
+
+    }
+}
+class Person {
+    private String name;
+    private String position;
+    private String email;
+    private String phone;
+    private int salary;
+    private int age;
+
+    public Person (String name, String position, String email, String phone, int salary, int age) {
+        this.name = name;
+        this.position = position;
+        this.email = email;
+        this.phone = phone;
+        this.salary = salary;
+        this.age = age;
+    }
+    
+    public String toString(){
+        return(name+ "\n-"
+                +position+ "\n-"
+                +email+ "\n-"
+                +phone+ "\n-"
+                +salary+ "\n-"
+                +age);
+    }
+}
+
+
+
+____________________________________________________________________
+
+
+public class Lesson5 {
+    public static void main(String[] args) {
+        Att[] newAtt = new Att [1];
+        newAtt[0] = new Att ("Go", "c 10 до 20", 20);
+        for (Att Att : newAtt)
+            System.out.println(Att);
+
+    }
+}
+class Att {
+    private String name;
+    private String time;
+    private int price;
+
+
+    public Att (String name, String time, int price) {
+        this.name = name;
+        this.time = time;
+        this.price = price;
+    }
+    
+    public String toString(){
+        return(name+ "\n"
+                +time+ "\n"
+                +price+ "\n"
+                );
+    }
+}
